@@ -56,6 +56,14 @@
 }
 
 
+main h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900; /* Roboto Black */
+  font-size: 38px;  
+  color: #5F5E4A;
+}
+
+
 
 
 /* ESTILO FOOTER */
