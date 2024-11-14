@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* ESTILO NAV */
+.custom-nav {
+  background-color: #5F5E4A !important;
+}
+
+.custom-nav .nav-link {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 800; 
+  font-size: 18px; 
+  color: #EFE7DD; 
+}
+
+/* Estilo para el estado activo */
+.custom-nav .nav-link.active {
+  font-weight: 800; 
+  color: #DAABA3; 
+}
+
+/* Estilo para el hover */
+.custom-nav .nav-link:hover {
+  color: #B06F6B;
+  text-decoration: underline;
+}
+
+
+/* ESTILO FOOTER */
+footer .nav-link {
+  font-size: 0.875rem; 
+  color: #6c757d;
+}
+
+footer h5 {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 700; 
+  font-size: 18px; 
+  color: #EFE7DD; 
+}
+
+footer p {
+  font-size: 0.75rem; 
+  color: #EFE7DD;
+}
+
+footer p a{
+  font-size: 0.75rem; 
+  color: #EFE7DD;
+}
+
+footer .nav-link:hover {
+  color: #B06F6B;
+}
+
+footer span{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600; 
+  font-size: 14px; 
+  color: #EFE7DD; 
+}
