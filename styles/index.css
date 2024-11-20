@@ -1,7 +1,6 @@
 /* ESTILO NAV */
 .custom-nav {
   background-color: #5F5E4A !important;
-  border-bottom: 1px solid #B06F6B;
 }
 
 .custom-nav .nav-link {
@@ -100,5 +99,10 @@ footer span {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
+}
+
+@media (max-width: 991px) {
+  
 
 }
