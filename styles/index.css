@@ -12,12 +12,20 @@
 
 .custom-nav .nav-link.active {
   font-weight: 800;
-  color: #DAABA3 !important; 
+  color: #DAABA3 !important;
 }
 
 .custom-nav .nav-link:hover {
   color: #B06F6B;
   text-decoration: underline;
+}
+
+#searchForm {
+  display: none;
+}
+
+#searchForm.show {
+  display: block;
 }
 
 
@@ -103,6 +111,12 @@ footer span {
 }
 
 @media (max-width: 991px) {
-  
+  .form-control {
+    display: none;
+  }
+
+  .collapse.show {
+    display: block !important;
+  }
 
 }

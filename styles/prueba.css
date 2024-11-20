@@ -21,7 +21,11 @@
 }
 
 #searchForm {
-    transition: all 0.3s ease;
+    display: none;
+}
+
+#searchForm.show {
+    display: block;
 }
 
 @media (min-width: 768px) {
@@ -35,6 +39,10 @@
     .form-control {
         display: none;
         /* Ocultar el buscador en pantallas pequeñas */
+    }
+
+    .collapse.show {
+        display: block !important; /* Asegura que el formulario se muestre en pantallas pequeñas */
     }
     
 }

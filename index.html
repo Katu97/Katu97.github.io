@@ -16,25 +16,47 @@
 
         <!-- HEARDER -->
         <header class="py-3 mb-1 ms-0">
-            <div class="container-fluid px-5"> 
-                <div class="d-flex justify-content-between align-items-end">
-                    <a href="index1.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                        <img src="assets/MateAR-05.png" alt="Logo Matear" width="240">
+            <div class="container-fluid px-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a href="index1.html" class="d-flex align-items-center">
+                        <img src="assets/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
                     </a>
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-                        <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
-                    </form>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">
-                            <img src="assets/icons/login.png" alt="Login" width="25" class="ms-1">
-                        </a></li>
-                        <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">
-                            <img src="assets/icons/carrito.png" alt="Carrito" width="25" class="ms-1">
-                        </a></li>
-                    </ul>
+        
+                    <!-- Iconos y barra de búsqueda -->
+                    <div class="d-flex align-items-center">
+                        <!-- Buscador en pantalla grande -->
+                        <form class="d-none d-lg-flex me-3" id="searchForm">
+                            <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
+                        </form>
+                        
+                        <!-- Iconos de lupa, login y carrito -->
+                        <ul class="nav align-items-center">
+                            <!-- Lupa en modo responsivo -->
+                            <li class="nav-item d-lg-none">
+                                <a href="#" class="nav-link px-2" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
+                                    <img src="assets/icons/lupa.png" alt="Buscar" width="25">
+                                </a>
+                            </li>
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-2">
+                                    <img src="assets/icons/login.png" alt="Login" width="25">
+                                </a>
+                            </li>
+                            <!-- Carrito -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-2">
+                                    <img src="assets/icons/carrito.png" alt="Carrito" width="25">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
                 </div>
             </div>
         </header>
+        
+        
         <nav class="navbar navbar-expand-lg py-2 border-bottom custom-nav">
             <div class="container-fluid px-5">
                 <!-- Botón del menú hamburguesa -->
