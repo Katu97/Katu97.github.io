@@ -1,0 +1,22 @@
+/* ESTILO NAV */
+.custom-nav {
+    background-color: #5F5E4A !important;
+    border-bottom: 1px solid #B06F6B;
+  }
+  
+  .custom-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #EFE7DD;
+  }
+  
+  .custom-nav .nav-link.active {
+    font-weight: 800;
+    color: #DAABA3;
+  }
+  
+  .custom-nav .nav-link:hover {
+    color: #B06F6B;
+    text-decoration: underline;
+  }

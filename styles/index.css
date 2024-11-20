@@ -1,38 +1,33 @@
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
 /* ESTILO NAV */
 .custom-nav {
   background-color: #5F5E4A !important;
+  border-bottom: 1px solid #B06F6B;
 }
 
 .custom-nav .nav-link {
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 800; 
-  font-size: 18px; 
-  color: #EFE7DD; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #EFE7DD;
 }
 
-/* Estilo para el estado activo */
 .custom-nav .nav-link.active {
-  font-weight: 800; 
-  color: #DAABA3; 
+  font-weight: 800;
+  color: #DAABA3 !important; 
 }
 
-/* Estilo para el hover */
 .custom-nav .nav-link:hover {
   color: #B06F6B;
   text-decoration: underline;
 }
+
 
 /* ESTILO MAIN */
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -46,7 +41,7 @@
 .carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .carousel-container {
@@ -56,10 +51,11 @@
 }
 
 
-main h1{
+main h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 900; /* Roboto Black */
-  font-size: 38px;  
+  font-weight: 900;
+  /* Roboto Black */
+  font-size: 38px;
   color: #5F5E4A;
 }
 
@@ -68,24 +64,24 @@ main h1{
 
 /* ESTILO FOOTER */
 footer .nav-link {
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   color: #6c757d;
 }
 
 footer h5 {
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 700; 
-  font-size: 18px; 
-  color: #EFE7DD; 
-}
-
-footer p {
-  font-size: 0.75rem; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
   color: #EFE7DD;
 }
 
-footer p a{
-  font-size: 0.75rem; 
+footer p {
+  font-size: 0.75rem;
+  color: #EFE7DD;
+}
+
+footer p a {
+  font-size: 0.75rem;
   color: #EFE7DD;
 }
 
@@ -93,10 +89,16 @@ footer .nav-link:hover {
   color: #B06F6B;
 }
 
-footer span{
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 600; 
-  font-size: 14px; 
-  color: #EFE7DD; 
+footer span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #EFE7DD;
 }
 
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+}
