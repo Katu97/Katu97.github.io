@@ -71,7 +71,7 @@ main h1 {
 
 /* ESTILO FOOTER */
 footer .nav-link {
-  font-size: 0.875rem;
+  font-size: 100% !important;
   color: #6c757d;
 }
 

@@ -50,6 +50,22 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    footer h5 {
+        font-size: 16px;
+    }
+
+    footer ul li, footer small {
+        font-size: 14px;
+    }
+
+    footer .social-icon {
+        width: 20px; /* Reducir tamaño de los íconos de redes */
+    }
+
+    footer img {
+        max-width: 100%; /* Métodos de pago mantienen tamaño original */
+    }
     
 
 }
