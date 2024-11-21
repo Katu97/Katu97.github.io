@@ -6,75 +6,234 @@
     <title>Prueba</title>
     <link rel="icon" href="assets/MateAR-46.png">
     <link rel="stylesheet" href="styles/prueba.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-    <body>
-        <header class="py-3 mb-1 ms-0">
-            <div class="container-fluid px-5">
-                <div class="d-flex justify-content-between align-items-center">
-                    <!-- Logo -->
-                    <a href="index1.html" class="d-flex align-items-center">
-                        <img src="assets/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
-                    </a>
-        
-                    <!-- Iconos y barra de búsqueda -->
-                    <div class="d-flex align-items-center">
-                        <!-- Buscador en pantalla grande -->
-                        <form class="d-none d-lg-flex me-3" id="searchForm">
-                            <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
-                        </form>
-                        
-                        <!-- Iconos de lupa, login y carrito -->
-                        <ul class="nav align-items-center">
-                            <!-- Lupa en modo responsivo -->
-                            <li class="nav-item d-lg-none">
-                                <a href="#" class="nav-link px-2" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                                    <img src="assets/icons/lupa.png" alt="Buscar" width="25">
-                                </a>
-                            </li>
-                            <!-- Login -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link px-2">
-                                    <img src="assets/icons/login.png" alt="Login" width="25">
-                                </a>
-                            </li>
-                            <!-- Carrito -->
-                            <li class="nav-item">
-                                <a href="#" class="nav-link px-2">
-                                    <img src="assets/icons/carrito.png" alt="Carrito" width="25">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>                    
+<body>
+    <header class="py-3 mb-1 ms-0">
+        <div class="container-fluid px-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index1.html" class="d-flex align-items-center">
+                    <img src="assets/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
+                </a>
+
+                <!-- Iconos y barra de búsqueda -->
+                <div class="d-flex align-items-center">
+                    
+                    <!-- Buscador en pantalla grande -->
+                    <form class="d-none d-lg-flex me-3" id="searchForm">
+                        <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    </form>
+
+                    <!-- Iconos de login y carrito -->
+                    <ul class="nav align-items-center">
+                        <!-- Login -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2">
+                                <img src="assets/icons/login.png" alt="Login" width="25">
+                            </a>
+                        </li>
+                        <!-- Carrito -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2">
+                                <img src="assets/icons/carrito.png" alt="Carrito" width="25">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Botón del menú hamburguesa -->
+                    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg py-2 custom-nav">
+        <div class="container-fluid px-5">
+            <!-- Contenido del menú hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-4 active" aria-current="page">Inicio</a></li>
+                    <li class="nav-item"><a href="mates.html" class="nav-link px-4">Mates</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">Accesorios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">¡Lo Nuevo!</a></li>
+                    <li class="nav-item"><a href="infoutil.html" class="nav-link px-4">Información Útil</a></li>
+                    <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-4">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">Términos y Condiciones</a></li>
+                </ul>
+
+                <!-- Buscador en el menú hamburguesa -->
+                <form class="d-lg-none mt-3">
+                    <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
         
-        
-        <nav class="navbar navbar-expand-lg py-2 border-bottom custom-nav">
-            <div class="container-fluid px-5">
-                <!-- Botón del menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Contenido del menú -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link px-4 active" aria-current="page">Inicio</a></li>
-                        <li class="nav-item"><a href="mates.html" class="nav-link px-4">Mates</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-4">Accesorios</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-4">¡Lo Nuevo!</a></li>
-                        <li class="nav-item"><a href="infoutil.html" class="nav-link px-4">Información Útil</a></li>
-                        <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-4">Sobre Nosotros</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-4">Términos y Condiciones</a></li>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/Carrusel/6.jpg" class="d-block w-100" alt="CyberMonday">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/Carrusel/7.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Carrusel/10.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+          <div class="accordion flex flex-col w-full max-w-[850px] mx-auto" id="accordionFAQ">
+            <!-- First Question -->
+            <div>
+                <hr>
+                <h2 class="accordion-header">
+                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What types of trips do you offer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" style="">
+                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
+                        We offer a wide range of travel experiences including adventure tours, cultural immersions,
+                        luxury getaways, and family-friendly vacations. Our trips are curated to fit different
+                        interests and budgets, ensuring something for every type of traveler.
+                    </p>
+                </div>
+                <hr class="mt-4">
+            </div>
+            <!-- Second Question -->
+            <div>
+                <h2 class="accordion-header">
+                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        How do I book a trip?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ" style="">
+                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
+                        Booking is simple! You can book directly on our website by selecting your preferred
+                        destination and itinerary. Our easy-to-use platform allows you to customize your trip,
+                        select accommodations, activities, and flights. For assistance, feel free to contact our
+                        support team.
+                    </p>
+                </div>
+                <hr class="mt-4">
+            </div>
+            <!-- Third Question -->
+            <div>
+                <h2 class="accordion-header">
+                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you provide travel insurance?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
+                        Yes, we offer comprehensive travel insurance to give you peace of mind during your trip.
+                        Coverage includes trip cancellations, medical emergencies, lost luggage, and more. For more
+                        details on what's covered, visit our insurance page or contact us for personalized options.
+                    </p>
+                </div>
+                <hr class="mt-4">
+            </div>
+            <!-- Fourth Question -->
+            <div>
+                <h2 class="accordion-header">
+                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Can I make changes to my booking after it's confirmed?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
+                        Yes, we understand that plans can change. You can make modifications to your booking,
+                        including changes to dates, accommodations, or destinations, depending on availability.
+                        Please contact our customer support team as soon as possible to discuss your options.
+                    </p>
+                </div>
+                <hr class="mt-4">
+            </div>
+            <!-- Fifth Question -->
+            <div>
+                <h2 class="accordion-header">
+                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Are the tours guided?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
+                        Most of our tours are guided by experienced professionals who are knowledgeable about the
+                        local culture and attractions. Some packages may offer self-guided options, allowing you to
+                        explore at your own pace. Check the details for each tour to see what's included.
+                    </p>
+                </div>
+                <hr class="mt-4">
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: contacto@ejemplo.com</li>
+                        <li>Teléfono: +123 456 7890</li>
+                        <li>Dirección: Calle Falsa 123</li>
                     </ul>
                 </div>
+    
+                <!-- Redes sociales -->
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">Síguenos</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-white mx-2">
+                            <img src="assets/icons/facebook.png" alt="Facebook" width="30" class="social-icon">
+                        </a>
+                        <a href="#" class="text-white mx-2">
+                            <img src="assets/icons/instagram.png" alt="Instagram" width="30" class="social-icon">
+                        </a>
+                        <a href="#" class="text-white mx-2">
+                            <img src="assets/icons/twitter.png" alt="Twitter" width="30" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Métodos de pago -->
+                <div class="col-md-4 text-center">
+                    <h5 class="text-uppercase">Métodos de Pago</h5>
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/icons/visa.png" alt="Visa" width="50" class="mx-2">
+                        <img src="assets/icons/mastercard.png" alt="MasterCard" width="50" class="mx-2">
+                        <img src="assets/icons/paypal.png" alt="PayPal" width="50" class="mx-2">
+                    </div>
+                </div>
             </div>
-        </nav>
-        
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+            <div class="text-center mt-4">
+                <small>&copy; 2024 Tu Empresa. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -38,11 +38,18 @@
 @media (max-width: 992px) {
     .form-control {
         display: none;
-        /* Ocultar el buscador en pantallas pequeñas */
     }
 
     .collapse.show {
-        display: block !important; /* Asegura que el formulario se muestre en pantallas pequeñas */
+        display: block !important;
+    }
+
+    .navbar-toggler .navbar-toggler-icon{
+        background-image: url(../assets/icons/menu.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     
+
 }

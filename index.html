@@ -22,49 +22,44 @@
                     <a href="index1.html" class="d-flex align-items-center">
                         <img src="assets/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
                     </a>
-        
+    
                     <!-- Iconos y barra de búsqueda -->
                     <div class="d-flex align-items-center">
+                        
                         <!-- Buscador en pantalla grande -->
                         <form class="d-none d-lg-flex me-3" id="searchForm">
                             <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
                         </form>
-                        
-                        <!-- Iconos de lupa, login y carrito -->
+    
+                        <!-- Iconos de login y carrito -->
                         <ul class="nav align-items-center">
-                            <!-- Lupa en modo responsivo -->
-                            <li class="nav-item d-lg-none">
-                                <a href="#" class="nav-link px-2" data-bs-toggle="collapse" data-bs-target="#searchForm" aria-expanded="false" aria-controls="searchForm">
-                                    <img src="assets/icons/lupa.png" alt="Buscar" width="25">
-                                </a>
-                            </li>
                             <!-- Login -->
                             <li class="nav-item">
                                 <a href="#" class="nav-link px-2">
-                                    <img src="assets/icons/login.png" alt="Login" width="25">
+                                    <img src="assets/icons/login.png" alt="Login" width="25" class="img-fluid">
                                 </a>
                             </li>
                             <!-- Carrito -->
                             <li class="nav-item">
                                 <a href="#" class="nav-link px-2">
-                                    <img src="assets/icons/carrito.png" alt="Carrito" width="25">
+                                    <img src="assets/icons/carrito.png" alt="Carrito" width="25" class="img-fluid">
                                 </a>
                             </li>
                         </ul>
-                    </div>                    
+    
+                        <!-- Botón del menú hamburguesa -->
+                        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
-        
-        
-        <nav class="navbar navbar-expand-lg py-2 border-bottom custom-nav">
+    
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg py-2 custom-nav">
             <div class="container-fluid px-5">
-                <!-- Botón del menú hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Contenido del menú -->
+                <!-- Contenido del menú hamburguesa -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item"><a href="index.html" class="nav-link px-4 active" aria-current="page">Inicio</a></li>
@@ -75,6 +70,11 @@
                         <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-4">Sobre Nosotros</a></li>
                         <li class="nav-item"><a href="#" class="nav-link px-4">Términos y Condiciones</a></li>
                     </ul>
+    
+                    <!-- Buscador en el menú hamburguesa -->
+                    <form class="d-lg-none mt-3">
+                        <input type="search" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    </form>
                 </div>
             </div>
         </nav>
@@ -82,7 +82,7 @@
         <!-- MAIN -->
         <main>
             <!-- Carrusel -->
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -93,27 +93,27 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-container">
-                            <img src="assets/Carrusel/6.jpg" alt="CyberMonday" class="carousel-img">
+                            <img src="assets/Carrusel/6.jpg" alt="CyberMonday" class="d-block w-100">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <img src="assets/Carrusel/7.png" alt="Eslogan" class="carousel-img">
+                            <img src="assets/Carrusel/7.png" alt="Eslogan" class="d-block w-100">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <img src="assets/Carrusel/8.png" alt="Personalizados" class="carousel-img">
+                            <img src="assets/Carrusel/8.png" alt="Personalizados" class="d-block w-100">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <img src="assets/Carrusel/9.png" alt="ComboMatero" class="carousel-img">
+                            <img src="assets/Carrusel/9.png" alt="ComboMatero" class="d-block w-100">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-container">
-                            <img src="assets/Carrusel/10.png" alt="NuevosProductos" class="carousel-img">
+                            <img src="assets/Carrusel/10.png" alt="NuevosProductos" class="d-block w-100">
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                     <h5>Metodos de Pago</h5>
                     <div class="container pe-5 px-0">
                         <div class="row row-cols-3 justify-content-start">
-                            <img src="assets/icons/visadebit@2x.png" alt="Visa Débito" width="35" class="mb-2">
+                            <img src="assets/icons/visadebit@2x.png" alt="Visa Débito" width="35">
                             <img src="assets/icons/visa@2x.png" alt="Visa Crédito" width="35" class="mb-2">
                             <img src="assets/icons/cabaldebit@2x.png" alt="Cabal" width="35" class="mb-2">
                             <img src="assets/icons/falabella@2x.png" alt="CMR" width="35" class="mb-2">

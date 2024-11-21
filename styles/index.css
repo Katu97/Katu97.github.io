@@ -107,6 +107,13 @@ footer span {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+ 
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler{
+    display: none;
+  }
 
 }
 
@@ -118,5 +125,12 @@ footer span {
   .collapse.show {
     display: block !important;
   }
+
+  .navbar-toggler .navbar-toggler-icon{
+    background-image: url(../assets/icons/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 }
