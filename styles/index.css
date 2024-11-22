@@ -72,6 +72,7 @@ main h2 {
   /* Roboto Black */
   font-size: 30px;
   color: #5F5E4A;
+  
 }
 
 /* Atajos */
@@ -89,6 +90,49 @@ main h2 {
   border-radius: 5px;
   display: inline-block;
 }
+
+
+/*Destacados*/
+.card{
+  border: none !important;
+  width: 18rem;
+}
+
+.card-body{
+  font-family: 'Roboto', sans-serif;
+  text-align: center !important;
+}
+
+.Prod-Name{
+  font-weight: medium;
+  font-size: 15px;
+  color: #5F5E4A;
+  text-transform: uppercase;
+}
+
+.precio{
+  font-weight: bolder;
+  font-size: 22px;
+  color: #B06F6B;
+}
+
+.csi{
+  font-weight: lighter;
+  font-size: 13px;
+  color: #5F5E4A;
+}
+
+.btn{
+  background-color: #5F5E4A !important;
+  font-weight: 600 !important;
+  font-size: 18px;
+  color: #EFE7DD;
+  font-family: 'Roboto', sans-serif;
+  text-align: center !important;
+}
+
+
+
 
 
 /* ESTILO FOOTER */
