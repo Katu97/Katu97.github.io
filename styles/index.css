@@ -66,6 +66,14 @@ main h1 {
   color: #5F5E4A;
 }
 
+main h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  /* Roboto Black */
+  font-size: 30px;
+  color: #5F5E4A;
+}
+
 /* Atajos */
 .card{
   min-width: 322px;
