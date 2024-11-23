@@ -1,0 +1,23 @@
+#enlace-filtro{
+    color: #5f5e4a !important;
+}
+
+main h5{
+    color: #5f5e4a !important;
+}
+
+.custom-line2:focus { 
+    outline: none !important; 
+    box-shadow: none !important;
+    border: 1px solid #5F5E4A !important;
+}
+
+.btn-outline-secondary:{
+    border: 1px solid #5F5E4A !important;
+}
+
+.btn-outline-secondary:active{
+    background-color: #c2beb1 !important;
+    border: #c2beb1 !important;
+    color: #5f5e4A !important;
+}

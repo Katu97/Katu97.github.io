@@ -111,14 +111,14 @@ main h3{
 
 .Prod-Name{
   font-weight: medium;
-  font-size: 15px;
+  font-size: 14px;
   color: #5F5E4A;
   text-transform: uppercase;
 }
 
 .precio{
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 19px;
   color: #B06F6B;
 }
 
@@ -179,7 +179,6 @@ main h3{
 .custom-line:focus { 
   outline: none !important; 
 }
-
 
 
 /* ESTILO FOOTER */
