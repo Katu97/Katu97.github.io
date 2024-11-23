@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba</title>
-    <link rel="icon" href="assets/MateAR-46.png">
+    <link rel="icon" href="assets/logo/MateAR-46.png">
     <link rel="stylesheet" href="styles/prueba.css"/>
+    <link rel="stylesheet" href="styles/index.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -14,7 +15,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <!-- Logo -->
                 <a href="index1.html" class="d-flex align-items-center">
-                    <img src="assets/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
+                    <img src="assets/logo/MateAR-05.png" alt="Logo Matear" class="img-fluid" width="180">
                 </a>
 
                 <!-- Iconos y barra de búsqueda -->
@@ -76,114 +77,61 @@
 
     <main>
         
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/Carrusel/6.jpg" class="d-block w-100" alt="CyberMonday">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/Carrusel/7.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="assets/Carrusel/10.png" class="d-block w-100" alt="...">
-              </div>
+        <div class="row my-3 pt-3 pb-4">
+            <div class="row-fluid container-wide my-4 text-center">
+                <div class="subtitle-container m-bottom m-none-xs">
+                    <h2 class="h2-xs">¡Subscribite y enterate de todas nuestras promociones!</h2>
+                    <h3 class="mt-4">Registrate ahora</h3>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
 
+        
+            <div class="container">
+                <form class="d-flex">
+                    <div class="row g-2 mb-3 w-100 justify-content-between">
+                        <!-- EMail -->
+                        <div class="d-flex col-md-6 themed-grid-col justify-content-center pe-3">
+                            <div class="d-flex form-floating col-md-6 w-75 justify-content-start">
+                                <input type="email" class="form-control custom-line" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">*Email</label>
+                            </div>
+                        </div>
+                    
+                        <!-- Contraseña -->
+                        <div class="d-flex justify-content-center ps-3 col-md-6 themed-grid-col">
+                            <div class="card col-md-6 w-75 justify-content-start">
+                                <div class="form-floating mb-3 justify-content-start">
+                                    <input type="tel" class="form-control custom-line" id="floatingPhone" placeholder="Teléfono (cod. área + número)">
+                                    <label for="floatingPassword">Teléfono (cod. área + número)</label>
+                                </div>
+                                <div class="mb-3 d-flex">
+                                    <div class="form-check me-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">WhatsApp</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                        <label class="form-check-label" for="exampleCheck2">SMS</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
 
+                <div class="row justify-content-center my-4">
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-secondary btn-lg text-uppercase">Subcribirme</a>
+                    </div>
+                </div>
+            </div>
 
-          <div class="accordion flex flex-col w-full max-w-[850px] mx-auto" id="accordionFAQ">
-            <!-- First Question -->
-            <div>
-                <hr>
-                <h2 class="accordion-header">
-                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        What types of trips do you offer?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" style="">
-                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
-                        We offer a wide range of travel experiences including adventure tours, cultural immersions,
-                        luxury getaways, and family-friendly vacations. Our trips are curated to fit different
-                        interests and budgets, ensuring something for every type of traveler.
-                    </p>
-                </div>
-                <hr class="mt-4">
-            </div>
-            <!-- Second Question -->
-            <div>
-                <h2 class="accordion-header">
-                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                        How do I book a trip?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ" style="">
-                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
-                        Booking is simple! You can book directly on our website by selecting your preferred
-                        destination and itinerary. Our easy-to-use platform allows you to customize your trip,
-                        select accommodations, activities, and flights. For assistance, feel free to contact our
-                        support team.
-                    </p>
-                </div>
-                <hr class="mt-4">
-            </div>
-            <!-- Third Question -->
-            <div>
-                <h2 class="accordion-header">
-                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Do you provide travel insurance?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
-                        Yes, we offer comprehensive travel insurance to give you peace of mind during your trip.
-                        Coverage includes trip cancellations, medical emergencies, lost luggage, and more. For more
-                        details on what's covered, visit our insurance page or contact us for personalized options.
-                    </p>
-                </div>
-                <hr class="mt-4">
-            </div>
-            <!-- Fourth Question -->
-            <div>
-                <h2 class="accordion-header">
-                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Can I make changes to my booking after it's confirmed?
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
-                        Yes, we understand that plans can change. You can make modifications to your booking,
-                        including changes to dates, accommodations, or destinations, depending on availability.
-                        Please contact our customer support team as soon as possible to discuss your options.
-                    </p>
-                </div>
-                <hr class="mt-4">
-            </div>
-            <!-- Fifth Question -->
-            <div>
-                <h2 class="accordion-header">
-                    <button class="flex justify-between px-4 w-full items-center bg-transparent accordion-button text-white py-0 mt-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        Are the tours guided?
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                    <p class="text-sm text-gray-300 px-8 leading-6 mt-4">
-                        Most of our tours are guided by experienced professionals who are knowledgeable about the
-                        local culture and attractions. Some packages may offer self-guided options, allowing you to
-                        explore at your own pace. Check the details for each tour to see what's included.
-                    </p>
-                </div>
-                <hr class="mt-4">
-            </div>
         </div>
+
+
+
+          
 
     </main>
 
@@ -192,7 +140,7 @@
         <div class="d-flex flex-column flex-sm-row justify-content-center align-items-start">
             <div class="col-md-2 mb-3 px-3">
                 <a href="#" class="align-items-center mb-3">
-                    <img src="assets/MateAR-13.png" alt="Logo Matear" width="170">
+                    <img src="assets/logo/MateAR-13.png" alt="Logo Matear" width="170">
                 </a>
             </div>
             <div class="col-md-2 mb-3 px-3">

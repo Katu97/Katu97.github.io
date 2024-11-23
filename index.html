@@ -89,7 +89,7 @@
     <!-- MAIN -->
     <main>
         <!-- Carrusel -->
-        <div id="myCarousel" class="carousel slide my-3 mx-3" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide my-3 mx-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -261,14 +261,100 @@
 
             <div class="row justify-content-center my-4">
                 <div class="col-auto">
-                    <a href="#" class="btn btn-secondary btn-lg text-uppercase">Ver más productos destacados</a>
+                    <a href="#" class="btn btn-primary btn-lg text-uppercase">Ver más productos destacados</a>
                 </div>
             </div>
 
 
-          </div>
+        </div>
 
+        <!--NUESTROS PRODUCTOS-->
+        
+        <div class="row my-3 text-center justify-content-center custom-nav pt-3 pb-4">
+            <div class="row-fluid container-wide my-4 text-center">
+                <div class="subtitle-container m-bottom m-none-xs">
+                    <h2 class="h2-xs text-uppercase ligth">Nuestros Productos</h2>
+                </div>
+            </div>
 
+        
+            <div class="row g-2 mb-3 w-75 justify-content-center">
+                <!-- Columna de Texto -->
+                <div class="d-flex col-md-6 themed-grid-col justify-content-center">
+                  <div class="d-flex card col-md-6 ligth w-75 align-items-center justify-content-center text-center">
+                    <p class="texto m-0">
+                      Nuestros mates artesanales combinan tradición y diseño único, hechos a mano con materiales de calidad. Desde opciones clásicas hasta piezas personalizadas, cada uno ofrece una experiencia auténtica y especial. Encuentra el mate perfecto para ti y disfruta de la esencia de nuestra cultura en cada sorbo.
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Columna del Video -->
+                <div class="d-flex justify-content-center col-md-6 themed-grid-col">
+                  <div class="card col-md-6 ligth w-75 ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/_PkQScVCUhY?start=00" 
+                            title="Creacion del Mate" 
+                            allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+            </div>
+              
+
+        </div>
+
+        <!--Subscripcion-->
+
+        <div class="row my-3 pt-3 pb-4">
+            <div class="row-fluid container-wide my-4 text-center">
+                <div class="subtitle-container m-bottom m-none-xs">
+                    <h2 class="h2-xs">¡Subscribite y enterate de todas nuestras promociones!</h2>
+                    <h3 class="mt-4">Registrate ahora</h3>
+                </div>
+            </div>
+
+        
+            <div class="container">
+                <form class="d-flex">
+                    <div class="row g-2 mb-3 w-100 justify-content-between">
+                        <!-- EMail -->
+                        <div class="d-flex col-md-6 themed-grid-col justify-content-center pe-3">
+                            <div class="d-flex form-floating col-md-6 w-75 justify-content-start">
+                                <input type="email" class="form-control custom-line" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">*Email</label>
+                            </div>
+                        </div>
+                    
+                        <!-- Contraseña -->
+                        <div class="d-flex justify-content-center ps-3 col-md-6 themed-grid-col">
+                            <div class="card col-md-6 w-75 justify-content-start">
+                                <div class="form-floating mb-3 justify-content-start">
+                                    <input type="tel" class="form-control custom-line" id="floatingPhone" placeholder="Teléfono (cod. área + número)">
+                                    <label for="floatingPassword">Teléfono (cod. área + número)</label>
+                                </div>
+                                <div class="mb-3 d-flex">
+                                    <div class="form-check me-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">WhatsApp</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                        <label class="form-check-label" for="exampleCheck2">SMS</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+
+                <div class="row justify-content-center my-4">
+                    <div class="col-auto px-0">
+                        <a href="#" class="btn btn-primary btn-lg text-uppercase px-5">Subcribirme</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
@@ -282,7 +368,7 @@
                     <img src="assets/logo/MateAR-13.png" alt="Logo Matear" width="180">
                 </a>
             </div>
-            <div class="col">
+            <div class="col mb-3">
                 <h5>Navegación</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item"><a href="index.html" class="nav-link p-0 active" aria-current="page">Inicio</a>
@@ -294,7 +380,7 @@
                     <li class="nav-item"><a href="sobrenosotros.html" class="nav-link p-0">Sobre Nosotros</a></li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col mb-3">
                 <h5>Metodos de Pago</h5>
                 <div class="container pe-2 px-0">
                     <div class="col justify-content-start">
@@ -312,7 +398,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col mb-3">
                 <h5>Contactos</h5>
                 <div class="container ps-0">
                     <div class="d-flex align-items-center">
@@ -326,7 +412,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col mb-3">
                 <h5>Redes Sociales</h5>
                 <div class="col gy-2 justify-content-start">
                     <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"
@@ -348,7 +434,7 @@
                 </div>
             </div>
 
-            <div class="col">
+            <div class="col mb-3">
 
             </div>
 

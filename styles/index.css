@@ -58,21 +58,27 @@
 }
 
 
-main h1 {
+main h1,
+main h2,
+main h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  /* Roboto Black */
-  font-size: 38px;
   color: #5F5E4A;
 }
 
-main h2 {
-  font-family: 'Roboto', sans-serif;
+main h1{
   font-weight: 900;
-  /* Roboto Black */
+  font-size: 38px;
+}
+
+main h2 {
+  font-weight: 900;
   font-size: 30px;
-  color: #5F5E4A;
   
+}
+
+main h3{
+  font-weight: 300;
+  font-size: 22px;
 }
 
 /* Atajos */
@@ -117,21 +123,62 @@ main h2 {
 }
 
 .csi{
-  font-weight: lighter;
+  font-weight: initial;
   font-size: 13px;
   color: #5F5E4A;
 }
 
-.btn{
+.btn-primary{
   background-color: #5F5E4A !important;
   font-weight: 600 !important;
   font-size: 18px;
   color: #EFE7DD;
   font-family: 'Roboto', sans-serif;
   text-align: center !important;
+  letter-spacing: 3px;
+  border: #5f5e4a !important;
+
+}
+
+.btn-primary:hover{
+  background-color: #fff !important;
+  border: #5f5e4a !important;
+  border-style: solid !important;
+  color: #5F5E4A !important;
+}
+
+.btn-primary:active{
+  background-color: #c2beb1 !important;
+  border: #c2beb1 !important;
+  color: #5f5e4A !important;
+}
+
+/*Descripción Productos*/
+.ligth{
+  color: #EFE7DD !important;
+  background-color: #5F5E4A !important;
+}
+
+.texto{
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-weight: 500;
+  text-align: justify;
+  font-size: large;
 }
 
 
+/*Subscripcion*/
+.custom-line {
+  border: none !important;
+  border-bottom: 2px solid #ccc !important; 
+  border-radius: 0 !important; 
+  background-color: transparent !important; 
+  box-shadow: none !important;
+}
+
+.custom-line:focus { 
+  outline: none !important; 
+}
 
 
 
