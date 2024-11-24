@@ -83,28 +83,32 @@
 
 
         <!-- MAIN -->
-        <main class="container-fluid mx-5">
+        <main class="container-flex mx-5">
             <h1 class="pt-3">MATES</h1>
             <section class="flex flex-col mt-2">
 
-                <div class="container-flex">
-                    <div class="flez">
-                        <button class="dropdown-toggle text-amber-200 text-sm border-amber-200 border-[1px] rounded-3xl px-6 py-2 hover:bg-amber-200 hover:text-black duration-300 ease-in-out flex justify-center items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sort by popular<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down w-4 h-4"><path d="m6 9 6 6 6-6"></path></svg>
-                        </button>
-                        <ul class="dropdown-menu bg-[#0f0e12] border-amber-200 rounded-xl border-[1px] mt-2 text-sm text-amber-50/90 w-full">
-                            <li><a class="dropdown-item text-amber-200" href="">Price (low to high)</a></li>
-                            <li><a class="dropdown-item text-amber-200" href="#">Price (high to low)</a></li>
-                            <li><a class="dropdown-item text-amber-200" href="#">A-Z</a></li>
-                            <li><a class="dropdown-item text-amber-200" href="#">Z-A</a></li>
-                        </ul>
+                <div class="d-flex justify-content-end">
+                    <div class="container-flex">
+                      <button class="btn btn-link text-decoration-none text-dark d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ordenar por: <span class="fw-bold">Popular</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                      </button>
+                      <ul class="dropdown-menu border-0 shadow-sm mt-1">
+                        <li><a class="dropdown-item" href="#">Precio (bajo a alto)</a></li>
+                        <li><a class="dropdown-item" href="#">Precio (alto a bajo)</a></li>
+                        <li><a class="dropdown-item" href="#">A-Z</a></li>
+                        <li><a class="dropdown-item" href="#">Z-A</a></li>
+                      </ul>
                     </div>
-                </div>
+                  </div>
+                  
 
-                <div class="container-flex mt-5 justify-between ps-4">
-                    <div class="row w-100">
+                <div class="container-flex mt-1 justify-between ps-4">
+                    <div class="row justify-content-between w-100">
                         <!-- Filtros a la izquierda -->
-                        <div class="col-md-3 ps-0 pe-5">
+                        <div class="col-md-2 ps-0 pe-5">
                             <h3 class="fw-bold">Filtros</h3>
                             <h5>Color</h5>
                             <ul class="list-group border-0 w-75">
@@ -151,7 +155,7 @@
                                     Personalizados
                                 </label>
                             </div>
-                            <div class="form-check">
+                            <div class="form-check border-bottom pb-3 mb-4 w-75">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     Sin personalizar
@@ -161,7 +165,7 @@
                         </div>
                 
                         <!-- Productos a la derecha -->
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="row">
 
                                 <!--IMPERIAL ALGARROBO-->
