@@ -33,3 +33,23 @@
     display: flex;
     align-items: center;
 }
+
+#google{
+    letter-spacing: normal;
+}
+
+.texto{
+    color: #5F5E4A;
+    font-weight: 400;
+    font-size: small
+}
+
+a{
+    color: #5F5E4A;
+    font-weight: 600;
+    font-size: small;
+}
+.card{
+    max-width: 800px !important;
+    min-width: 500px !important;
+}

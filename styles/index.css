@@ -60,7 +60,8 @@
 
 main h1,
 main h2,
-main h3 {
+main h3,
+main h4 {
   font-family: 'Roboto', sans-serif;
   color: #5F5E4A;
 }
@@ -79,6 +80,11 @@ main h2 {
 main h3{
   font-weight: 300;
   font-size: 22px;
+}
+
+main h4{
+  font-weight: 600;
+  font-size: 18px;
 }
 
 /* Atajos */
@@ -203,6 +209,10 @@ main h3{
   outline: none !important; 
 }
 
+/*En proceso*/
+.spinner-border{
+  color: #5F5E4A !important;
+}
 
 /* ESTILO FOOTER */
 footer .nav-link {
