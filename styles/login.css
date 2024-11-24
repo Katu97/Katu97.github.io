@@ -1,0 +1,35 @@
+.shadow-lg{
+    border: 1px solid rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2), 15px 15px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.ul .nav-item {
+    margin: 0;
+}
+
+.inicioregistro {
+    background-color: #fff !important;
+    border: none !important;
+    color: #5F5E4A !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    padding: 0 10px !important;
+    text-decoration: none !important;
+}
+
+.inicioregistro:hover,
+.inicioregistro.active {
+    transition: color 0.3s ease!important;
+    text-decoration: underline !important;
+}
+
+.separator {
+    font-size: 18px;
+    color: #6c757d;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}

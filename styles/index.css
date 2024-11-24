@@ -67,7 +67,7 @@ main h3 {
 
 main h1{
   font-weight: 900;
-  font-size: 38px;
+  font-size: 35px;
 }
 
 main h2 {
@@ -142,12 +142,35 @@ main h3{
 
 .btn-primary:hover{
   background-color: #fff !important;
-  border: #5f5e4a !important;
-  border-style: solid !important;
+  border: 2px solid #5f5e4a !important;
   color: #5F5E4A !important;
 }
 
 .btn-primary:active{
+  background-color: #c2beb1 !important;
+  border: #c2beb1 !important;
+  color: #5f5e4A !important;
+}
+
+.btn-secondary{
+  background-color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 18px;
+  color: #5f5e4a !important;
+  font-family: 'Roboto', sans-serif;
+  text-align: center !important;
+  letter-spacing: 3px;
+  border: 2px solid #5f5e4a!important;
+
+}
+
+.btn-secondary:hover{
+  background-color: #5f5e4a !important;
+  border: #5f5e4a !important;
+  color: #EFE7DD !important;
+}
+
+.btn-secondary:active{
   background-color: #c2beb1 !important;
   border: #c2beb1 !important;
   color: #5f5e4A !important;
