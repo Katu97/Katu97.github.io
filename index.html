@@ -145,34 +145,34 @@
         </div>
 
         <!--Atajos-->
-        <div class="container mb-4">
+        <div class="container my-5">
             <div class="row row-cols-lg-3 row-cols-1 g-5">
                 <!-- Tarjeta 1 -->
                 <div class="col d-flex justify-content-center">
-                    <div class="card">
+                    <div class="card zoom">
                         <img src="assets/images/personalizado.JPG" class="card-img" alt="Personalizados"/>
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title shadowed-text text-uppercase fw-bold">Personalizado</h5>
+                            <a href="#"><h5 class="card-title shadowed-text text-uppercase fw-bold">Personalizados</h5></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tarjeta 2 -->
                 <div class="col d-flex justify-content-center">
-                    <div class="card">
+                    <div class="card zoom">
                         <img src="assets/images/mates.jpeg" class="card-img" alt="Mates" />
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title shadowed-text text-uppercase fw-bold">Mates</h5>
+                            <a href="mates.html"><h5 class="card-title shadowed-text text-uppercase fw-bold">Mates</h5></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tarjeta 3 -->
                 <div class="col d-flex justify-content-center">
-                    <div class="card">
+                    <div class="card zoom">
                         <img src="assets/images/accesorios.JPG" class="card-img" alt="Accesorios" />
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title shadowed-text text-uppercase fw-bold">Accesorios</h5>
+                            <a href="#" ><h5 class="card-title shadowed-text text-uppercase fw-bold">Accesorios</h5></a>
                         </div>
                     </div>
                 </div>
@@ -181,22 +181,22 @@
 
         <!--INFO DESCUENTOS-->
         <div class="row my-3 text-center custom-nav py-3">
-            <div class="col-md-4 themed-grid-col nav-link">
+            <div class="col-md-4 themed-grid-col">
               <div class="col-flex d-flex flex-column justify-content-center align-items-center">
                     <div class="col-md-6 text-center themed-grid-col"><img src="assets/icons/tarjeta.png" alt="Tarjeta" width="25" class="img-fluid"></div>
-                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold">6 cuotas sin interés</h5></div>
+                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold descuentos">6 cuotas sin interés</h5></div>
               </div>
             </div>
-            <div class="col-md-4 themed-grid-col nav-link">
+            <div class="col-md-4 themed-grid-col">
                 <div class="col-flex d-flex flex-column justify-content-center align-items-center">
                     <div class="col-md-6 text-center themed-grid-col"><img src="assets/icons/banco.png" alt="Banco" width="25" class="img-fluid"></div>
-                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold">15% off con transferencia</h5></div>
+                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold descuentos">15% off con transferencia</h5></div>
                 </div>
               </div>
-              <div class="col-md-4 themed-grid-col nav-link">
+              <div class="col-md-4 themed-grid-col">
                 <div class="col-flex d-flex flex-column justify-content-center align-items-center">
                     <div class="col-md-6 text-center themed-grid-col"><img src="assets/icons/trasporte.png" alt="Transporte" width="25" class="img-fluid"></div>
-                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold">Envío a todo el país</h5></div>
+                    <div class="col-md-6 text-center themed-grid-col"><h5 class="text-uppercase fw-bold descuentos">Envío a todo el país</h5></div>
                 </div>
               </div>
         </div>
@@ -348,11 +348,31 @@
 
                 <div class="row justify-content-center my-4">
                     <div class="col-auto px-0">
-                        <a href="#" class="btn btn-primary btn-lg text-uppercase px-5">Suscribirme</a>
+                        <button type="submit" class="btn btn-primary btn-lg text-uppercase px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Suscribirme
+                        </button>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">¡Gracias por Suscribirte!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tu suscripción ha sido confirmada. Pronto recibirás noticias y actualizaciones en tu correo electrónico.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+            </div>
         </div>
 
     </main>

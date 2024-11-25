@@ -79,91 +79,32 @@
 
 
     <main>
-        <div class="todo">
-            <div class="contenedor">
-
-                <div class="card">
-                    <!--LUCIANA-->
-                    <div class="face front p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="rgba(95,94,74,0.4)" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-                        </svg>
-                        <p class="mt-3"><em>"Me encanta mi mate de Matear. Es perfecto en tamaño, y el diseño es precioso. Además, llegó muy rápido y en un empaque tan bonito que hasta me dio pena abrirlo. ¡Es un 10/10!"</em></p>
-                    </div>
-                    <div class="face back">
-                        <!-- Imagen de perfil -->
-                        <img src="assets/images/luciana.png" alt="Profile" class="profile-img me-3">
-                        <!-- Nombre y estrellas -->
-                        <div>
-                            <h6 class="mb-1">Luciana Ramírez</h6>
-                            <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-            
+        
+        
+        
+        <!-- Button trigger modal -->
+        <a class="btn btn-primary btn-lg text-uppercase px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Suscribirme
+        </a>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">¡Gracias por Suscribirte!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
-                <!--MARTIN-->
-                <div class="card">
-                    <div class="face front p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="rgba(95,94,74,0.4)" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-                        </svg>
-                        <p class="mt-3"><em>"La calidad de estos mates es increíble. Compré uno como regalo y terminé comprándome otro para mí. Se nota el trabajo artesanal y el cuidado en cada detalle. ¡Sin duda, volveré a comprar!"</em></p>
-                    </div>
-                    <div class="face back">
-                        <!-- Imagen de perfil -->
-                        <img src="assets/images/martin.png" alt="Profile" class="profile-img me-3">
-                        <!-- Nombre y estrellas -->
-                        <div>
-                            <h6 class="mb-1">Martín López</h6>
-                            <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star"></i>
-                            </div>
-                        </div>
-                    </div>
-            
+                <div class="modal-body">
+                    <p>Tu suscripción ha sido confirmada. Pronto recibirás noticias y actualizaciones en tu correo electrónico.</p>
                 </div>
-
-                <!--CARLA-->
-                <div class="card">
-                    <div class="face front p-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="rgba(95,94,74,0.4)" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-                        </svg>
-                        <p class="mt-3"><em>"Matear ofrece algo diferente. El mate que compré es hermoso, único y se siente muy resistente. Además, el equipo fue súper amable y resolvieron todas mis dudas antes de la compra. ¡Lo recomiendo muchísimo!"</em></p>
-                    </div>
-                    <div class="face back">
-                        <!-- Imagen de perfil -->
-                        <img src="assets/images/carla.jpg" alt="Profile" class="profile-img me-3">
-                        <!-- Nombre y estrellas -->
-                        <div>
-                            <h6 class="mb-1">Carla Fernández</h6>
-                            <div class="stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-            
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
+            </div>
         </div>
+          
     </main>
 
     <!-- FOOTER -->
