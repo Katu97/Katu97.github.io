@@ -30,12 +30,10 @@
 
 
 /* ESTILO MAIN */
-/* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
 
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
@@ -183,7 +181,7 @@ main h4{
 }
 
 /*Descripción Productos*/
-.ligth{
+.dark{
   color: #EFE7DD !important;
   background-color: #5F5E4A !important;
 }
@@ -196,7 +194,7 @@ main h4{
 }
 
 
-/*Subscripcion*/
+/*Suscripcion*/
 .custom-line {
   border: none !important;
   border-bottom: 2px solid #ccc !important; 

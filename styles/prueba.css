@@ -30,28 +30,30 @@
 
 .custom-line {
     border: none !important;
-    border-bottom: 2px solid #ccc !important; 
-    border-radius: 0 !important; 
-    background-color: transparent !important; 
+    border-bottom: 2px solid #ccc !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
     box-shadow: none !important;
 }
 
-.custom-line:focus { 
-    outline: none !important; 
+.custom-line:focus {
+    outline: none !important;
 
 }
 
-.custom-line2:focus { 
-    outline: none !important; 
+.custom-line2:focus {
+    outline: none !important;
     box-shadow: none !important;
     border: 1px solid #5F5E4A !important;
-  }
+}
+
+
 
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
-      font-size: 3.5rem;
+        font-size: 3.5rem;
     }
-  
+
 }
 
 @media (max-width: 992px) {
@@ -63,7 +65,7 @@
         display: block !important;
     }
 
-    .navbar-toggler .navbar-toggler-icon{
+    .navbar-toggler .navbar-toggler-icon {
         background-image: url(../assets/icons/menu.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -74,17 +76,111 @@
         font-size: 16px;
     }
 
-    footer ul li, footer small {
+    footer ul li,
+    footer small {
         font-size: 14px;
     }
 
     footer .social-icon {
-        width: 20px; /* Reducir tamaño de los íconos de redes */
+        width: 20px;
+        /* Reducir tamaño de los íconos de redes */
     }
 
     footer img {
-        max-width: 100%; /* Métodos de pago mantienen tamaño original */
+        max-width: 100%;
+        /* Métodos de pago mantienen tamaño original */
     }
-    
 
+
+}
+
+
+
+.todo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.card .front p {
+    color: #5F5E4A;
+    background: #fff;
+    font-size: small;
+    font-weight: 600;
+}
+
+/* Con esto editamos la parte atras de las tarjetas */
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #5F5E4A;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars i,
+h6 {
+    color: #EFE7DD;
+}
+
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
